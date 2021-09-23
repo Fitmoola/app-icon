@@ -7,6 +7,8 @@
   "types": "dist/esm/index.d.ts",
   "unpkg": "dist/plugin.js",
   "files": [
+    "android/src/main/",
+    "android/build.gradle",
     "dist/",
     "ios/Plugin/",
     "CapacitorCommunityAppIcon.podspec"
@@ -30,6 +32,7 @@
   "author": "johnborges",
   "license": "MIT",
   "devDependencies": {
+    "@capacitor/android": "^3.0.1",
     "@capacitor/core": "3.0.1",
     "@capacitor/docgen": "^0.0.10",
     "@capacitor/ios": "^3.0.1",
@@ -59,6 +62,9 @@
   "capacitor": {
     "ios": {
       "src": "ios"
+    },
+    "android": {
+      "src": "android"
     }
   },
   "prettier": "@ionic/prettier-config",
