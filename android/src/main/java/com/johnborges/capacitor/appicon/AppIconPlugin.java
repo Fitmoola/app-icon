@@ -11,6 +11,10 @@ public class AppIconPlugin extends Plugin {
 
     private AppIcon implementation = new AppIcon();
 
+    public void load() {
+        implementation.setPluginConfig(getConfig());
+    }
+
     @PluginMethod
     public void isSupported(PluginCall call) {
         JSObject ret = new JSObject();
